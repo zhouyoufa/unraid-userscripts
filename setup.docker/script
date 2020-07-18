@@ -1,0 +1,22 @@
+#!/bin/bash
+
+#
+#  Bash Script to Manage /etc/docker/daemon.json file
+#
+
+tee /etc/docker/daemon.json <<EOF
+
+{
+  "dns": ["1.2.4.8", "223.5.5.5", "119.29.29.29"],
+  "max-concurrent-downloads": 10,
+  "max-concurrent-uploads": 10,
+  "debug": false,
+  "registry-mirrors": [
+    "https://registry.docker-cn.com",
+    "https://dockerhub.azk8s.cn",
+    "https://docker.mirrors.ustc.edu.cn",
+    "https://mirror.ccs.tencentyun.com"
+  ]
+}
+
+EOF
