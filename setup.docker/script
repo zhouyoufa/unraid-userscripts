@@ -4,7 +4,7 @@
 #  Bash Script to Manage /etc/docker/daemon.json file
 #
 
-tee /etc/docker/daemon.json <<EOF
+mkdir -p /etc/docker && tee /etc/docker/daemon.json > /dev/null <<EOF
 
 {
   "dns": ["1.2.4.8", "223.5.5.5", "119.29.29.29"],
