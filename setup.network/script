@@ -55,4 +55,6 @@ function addhost() {
 }
 
 addhost "13.250.177.223" "github.com"
-addhost "151.101.8.133" "raw.githubusercontent.com"
+addhost "151.101.128.133" "github.map.fastly.net"
+addhost "151.101.128.133" "raw.github.com"
+addhost "151.101.128.133" "raw.githubusercontent.com"
